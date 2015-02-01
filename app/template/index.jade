@@ -1,0 +1,38 @@
+doctype //if lt IE 7
+html.no-js.lt-ie9.lt-ie8.lt-ie7  
+//if IE 7
+  html.no-js.lt-ie9.lt-ie8  
+//if IE 8
+  html.no-js.lt-ie9  
+// [if gt IE 8] <!
+html.no-js
+  // <![endif]
+  head
+    meta(charset='utf-8')       
+    title Progress App
+    meta(name='description', content='')   
+    meta(name='viewport', content='width=device-width')
+    // Place favicon.ico and apple-touch-icon.png in the root directory
+    link(rel='stylesheet', href='styles/main.css') 
+  body
+    //if lt IE 10
+      p.browsehappy
+        | You are using an 
+        strong outdated
+        |  browser. Please 
+        a(href='http://browsehappy.com/') upgrade your browser
+        |  to improve your experience. 
+    .row   
+      .medium-10.columns  
+        #app     
+    
+    // build:js scripts/vendor.js
+    // bower:js
+
+    // I don't seem to need jQuery for this generator. assuming its for bootstrap?
+    // Should do a pull request w/ fix
+    //- script(src='bower_components/jquery/dist/jquery.js')
+
+    // endbower
+    // endbuild
+    script(src='scripts/app.js')
